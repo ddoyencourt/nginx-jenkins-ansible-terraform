@@ -1,10 +1,10 @@
-terroform {
+terraform {
     required_version = "1.3.3"
 }
 
 provider "aws" {
     region = var.region
-        profile = var.profile
+    profile = var.profile
 }
 
 resource "aws_instance" "web-site" {
