@@ -16,7 +16,7 @@
     
         - name: Install docker
           yum:
-            name: docker.io
+            name: docker
           become: yes
     
         - name: Start Docker
