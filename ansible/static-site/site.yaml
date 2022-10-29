@@ -4,7 +4,7 @@
       tasks:
     
         - name: Install pip3
-          apt:
+          yum:
             update_cache: yes
             name: python3-pip
           become: yes
@@ -15,7 +15,7 @@
           become: yes
     
         - name: Install docker
-          apt:
+          yum:
             name: docker.io
           become: yes
     
